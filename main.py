@@ -1,25 +1,23 @@
 # Imports
 import random
 
-# Opening prompt
-print("Hello and welcome to my game!")
-play = "Are you ready to play"
-user = input(play)
-
-if user == "No":
-    print("Maybe next time")
-elif user == "Yes":
-    print("Lets begin! Im thinking of a number between 1-20")
-
 # Machine's RGN (randomly generated number)
 machine = random.randrange(21)
 
-# Use's Choice
-user_num = int("")
+# GAME
+def game ():
+    print("Hello and welcome to my game! are you ready to play?")
+    response = input("")
+    if response == "yes":
+        print("Lets begin!")
+    else:
+        print("Okay, come back when you are ready to play!")
 
-# Results
-if user_num == machine:
-    print("Well done you choice the same number!")
-else:
-    print("Im correct number was...")
-    print(machine)
+    print("Pick a number between 1 and 10")
+    num = int(input(""))
+    if num == machine:
+        print("WOW! great guess, you are correct the right number was: " + str(machine))
+    else:
+        print("Nope, the number was:" + str(machine) )
+
+game()
