@@ -2,7 +2,7 @@
 import random
 
 # Machine's RGN (randomly generated number)
-machine = random.randrange(21)
+machine = random.randrange(11)
 
 # GAME
 def game ():
