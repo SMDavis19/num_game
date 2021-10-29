@@ -12,7 +12,7 @@ def game ():
         print("Lets begin!")
     else:
         print("Okay, come back when you are ready to play!")
-
+        exit()
     print("Pick a number between 1 and 10")
     num = int(input(""))
     if num == machine:
